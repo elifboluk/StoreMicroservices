@@ -1,3 +1,4 @@
+using FreeProduct.Services.Catalog.DTOs;
 using FreeProduct.Services.Catalog.Services;
 using FreeProduct.Services.Catalog.Settings;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
@@ -49,6 +50,22 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
+
+#region SEED DATA
+using (var scope = app.Services.CreateScope())
+{
+    var serviceProvider = scope.ServiceProvider;
+
+    var categoryService = serviceProvider.GetRequiredService<ICategoryService>();
+
+    if (!categoryService.GetAllAsync().Result.Data.Any())
+    {
+        categoryService.CreateAsync(new CategoryDto { Name = "Asp.Net Core Learning Book" }).Wait();
+        categoryService.CreateAsync(new CategoryDto { Name = "C# 101 Book" }).Wait();
+    }
+}
+#endregion
+
 app.UseAuthentication();
 app.UseAuthorization();
 
