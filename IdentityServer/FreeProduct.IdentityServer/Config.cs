@@ -18,7 +18,8 @@ namespace FreeProduct.IdentityServer
                new ApiResource("resource_photo_stock"){Scopes={"photo_stock_fullpermission"}},
                   new ApiResource("resource_basket"){Scopes={"basket_fullpermission"}},
                      new ApiResource("resource_discount"){Scopes={"discount_fullpermission"}},
-                        new ApiResource(IdentityServerConstants.LocalApi.ScopeName)
+                        new ApiResource("resource_order"){Scopes={"order_fullpermission"}},
+                           new ApiResource(IdentityServerConstants.LocalApi.ScopeName)
         };
 
         public static IEnumerable<IdentityResource> IdentityResources =>
@@ -45,6 +46,8 @@ namespace FreeProduct.IdentityServer
 
                 new ApiScope("discount_fullpermission", "Discount API için full erişim"),
 
+                new ApiScope("order_fullpermission","Order API için full erişim"),
+
                 new ApiScope(IdentityServerConstants.LocalApi.ScopeName)
             };
 
@@ -70,6 +73,7 @@ namespace FreeProduct.IdentityServer
                     AllowedGrantTypes = GrantTypes.ResourceOwnerPassword,
                     AllowedScopes = { "basket_fullpermission",
                                       "discount_fullpermission",
+                                      "order_fullpermission",
                                       IdentityServerConstants.StandardScopes.Email,
                                       IdentityServerConstants.StandardScopes.OpenId,
                                       IdentityServerConstants.StandardScopes.Profile,

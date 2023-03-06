@@ -24,15 +24,27 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FreeProduct.IdentityServer"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PhotoStock", "PhotoStock", "{1DEDB1A0-A94A-4747-8E25-6FA594CF2031}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FreeProduct.Services.PhotoStock", "Services\PhotoStock\FreeProduct.Services.PhotoStock\FreeProduct.Services.PhotoStock.csproj", "{E578D5ED-239A-4729-9E88-D45AC8B0FDCE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FreeProduct.Services.PhotoStock", "Services\PhotoStock\FreeProduct.Services.PhotoStock\FreeProduct.Services.PhotoStock.csproj", "{E578D5ED-239A-4729-9E88-D45AC8B0FDCE}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Basket", "Basket", "{A0E9ACBB-A6C2-4A3B-8DD2-BB690EEFCEFF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FreeProduct.Services.Basket", "Services\Basket\FreeProduct.Services.Basket\FreeProduct.Services.Basket.csproj", "{40FE5E27-B3CA-44A1-8767-C073A6A9238B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FreeProduct.Services.Basket", "Services\Basket\FreeProduct.Services.Basket\FreeProduct.Services.Basket.csproj", "{40FE5E27-B3CA-44A1-8767-C073A6A9238B}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Discount", "Discount", "{7F45307D-1419-469D-8DAD-9E081104E7BC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FreeProduct.Services.Discount", "Services\Discount\FreeProduct.Services.Discount\FreeProduct.Services.Discount.csproj", "{9CA8C395-447C-4F93-815B-9946476CF1D2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FreeProduct.Services.Discount", "Services\Discount\FreeProduct.Services.Discount\FreeProduct.Services.Discount.csproj", "{9CA8C395-447C-4F93-815B-9946476CF1D2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Order", "Order", "{EAEDB73E-E325-4425-ACAC-85C8E3A48154}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FreeProduct.Services.Order.API", "Services\Order\FreeProduct.Services.Order.API\FreeProduct.Services.Order.API.csproj", "{640B20BD-CAAF-46B1-882A-EA18443564BF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FreeProduct.Services.Order.Application", "Services\Order\FreeProduct.Services.Order.Application\FreeProduct.Services.Order.Application.csproj", "{5D158321-5ED1-4F85-9B7E-F607380FB9B1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FreeProduct.Services.Order.Domain", "Services\Order\FreeProduct.Services.Order.Domain\FreeProduct.Services.Order.Domain.csproj", "{F41380AA-98C6-4213-B02C-94D1E4515C23}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FreeProduct.Services.Order.Domain.Core", "Services\Order\FreeProduct.Services.Order.Domain.Core\FreeProduct.Services.Order.Domain.Core.csproj", "{4E137A34-5EC6-49E0-BCA8-490DB86BC1E7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FreeProduct.Services.Order.Infrastructure", "Services\Order\FreeProduct.Services.Order.Infrastructure\FreeProduct.Services.Order.Infrastructure.csproj", "{95EEA5E8-D543-4D98-8CE7-9018854B56A7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -64,6 +76,26 @@ Global
 		{9CA8C395-447C-4F93-815B-9946476CF1D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9CA8C395-447C-4F93-815B-9946476CF1D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9CA8C395-447C-4F93-815B-9946476CF1D2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{640B20BD-CAAF-46B1-882A-EA18443564BF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{640B20BD-CAAF-46B1-882A-EA18443564BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{640B20BD-CAAF-46B1-882A-EA18443564BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{640B20BD-CAAF-46B1-882A-EA18443564BF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5D158321-5ED1-4F85-9B7E-F607380FB9B1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5D158321-5ED1-4F85-9B7E-F607380FB9B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5D158321-5ED1-4F85-9B7E-F607380FB9B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5D158321-5ED1-4F85-9B7E-F607380FB9B1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F41380AA-98C6-4213-B02C-94D1E4515C23}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F41380AA-98C6-4213-B02C-94D1E4515C23}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F41380AA-98C6-4213-B02C-94D1E4515C23}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F41380AA-98C6-4213-B02C-94D1E4515C23}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4E137A34-5EC6-49E0-BCA8-490DB86BC1E7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4E137A34-5EC6-49E0-BCA8-490DB86BC1E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4E137A34-5EC6-49E0-BCA8-490DB86BC1E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4E137A34-5EC6-49E0-BCA8-490DB86BC1E7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{95EEA5E8-D543-4D98-8CE7-9018854B56A7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{95EEA5E8-D543-4D98-8CE7-9018854B56A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{95EEA5E8-D543-4D98-8CE7-9018854B56A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{95EEA5E8-D543-4D98-8CE7-9018854B56A7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -79,6 +111,12 @@ Global
 		{40FE5E27-B3CA-44A1-8767-C073A6A9238B} = {A0E9ACBB-A6C2-4A3B-8DD2-BB690EEFCEFF}
 		{7F45307D-1419-469D-8DAD-9E081104E7BC} = {97632798-5029-4620-BDD3-A8E6DEC7151E}
 		{9CA8C395-447C-4F93-815B-9946476CF1D2} = {7F45307D-1419-469D-8DAD-9E081104E7BC}
+		{EAEDB73E-E325-4425-ACAC-85C8E3A48154} = {97632798-5029-4620-BDD3-A8E6DEC7151E}
+		{640B20BD-CAAF-46B1-882A-EA18443564BF} = {EAEDB73E-E325-4425-ACAC-85C8E3A48154}
+		{5D158321-5ED1-4F85-9B7E-F607380FB9B1} = {EAEDB73E-E325-4425-ACAC-85C8E3A48154}
+		{F41380AA-98C6-4213-B02C-94D1E4515C23} = {EAEDB73E-E325-4425-ACAC-85C8E3A48154}
+		{4E137A34-5EC6-49E0-BCA8-490DB86BC1E7} = {EAEDB73E-E325-4425-ACAC-85C8E3A48154}
+		{95EEA5E8-D543-4D98-8CE7-9018854B56A7} = {EAEDB73E-E325-4425-ACAC-85C8E3A48154}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {F826D640-3128-425A-92BE-C61CC232661D}
