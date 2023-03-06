@@ -1,5 +1,5 @@
 ﻿Sql script
-vbnvnvbnvbasddas
+cagri turan adamdır
 create table Discount(Id serial primary key,
 UserId varchar(200) unique not null,
 Rate smallint not null,
